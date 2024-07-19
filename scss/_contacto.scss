@@ -1,0 +1,34 @@
+/*FORMULARIO*/
+
+.container form {
+    margin: 30px;
+  }
+  
+  .titulo-centrado {
+    text-align: center;
+  }
+  
+  /*Separacion de botones*/
+  
+  .margin-button {
+    margin-top: 15px;
+  
+    /* Margen superior para los botones */
+    margin-left: 130px;
+    text-align: center;
+  
+    /* Alinear los botones al centro */
+  }
+  
+  /* Color de los botones formulario*/
+  
+  .custom-btn-primary {
+    background-color: $color-boton !important;
+    border-color: $color-bordeboton !important;
+  }
+  
+  .custom-btn-secondary {
+    background-color: #ec948d !important;
+    border-color: $color-bordeboton !important;
+  }
+  

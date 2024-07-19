@@ -1,0 +1,41 @@
+/*PAGINA SOBRE NOSOTROS*/
+
+.containernosotros {
+    margin-top: 0px;
+  }
+  
+  .sobrenosotros {
+    margin-top: 0;
+    margin-right: 10px;
+    margin-bottom: 100px;
+    margin-left: 10px;
+  }
+  
+  /* Botones Nosotros */
+  
+  .custo-btn-primary {
+    margin-top: 10px;
+    background-color: $color-boton !important;
+  
+    /* Color personalizado */
+    border-color: $color-bordeboton !important;
+  }
+  
+  /* Animaciones */
+  
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animate-card {
+    animation: fadeInUp 1s ease-out;
+  }
+  

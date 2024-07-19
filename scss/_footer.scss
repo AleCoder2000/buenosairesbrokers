@@ -1,0 +1,85 @@
+/*footer*/
+
+footer {
+    background-color: #9e82eb;
+    color: #fff;
+    padding: 10px 0;
+  
+    /* Ajustar el padding para reducir la altura */
+    width: 100%;
+  
+    /* Asegura que el footer ocupe todo el ancho */
+    bottom: 0;
+  
+    /* Fija el footer en la parte inferior */
+    left: 0;
+  
+    /* Ajusta el footer a la izquierda */
+    border-top: 1px solid #666;
+  
+    /* Borde superior */
+    border-bottom: 1px solid #666;
+  
+    /* Borde inferior */
+    padding-left: 15px;
+  
+    /* Espaciado a la izquierda */
+    padding-right: 15px;
+  
+    /* Espaciado a la derecha */
+  
+    a {
+      color: #fff;
+  
+      &:hover {
+        color: #f8f9fa;
+        text-decoration: none;
+      }
+    }
+  }
+  
+  .social-icons {
+    a {
+      margin-right: 10px;
+  
+      /* Espacio entre los íconos de redes sociales */
+      font-size: 24px;
+  
+      /* Tamaño de los íconos */
+    }
+  
+    .fab {
+      color: #fff;
+  
+      /* Color predeterminado de los íconos */
+      transition: color 0.3s ease;
+  
+      /* Transición suave para el cambio de color */
+  
+      &:hover {
+        color: #55acee;
+  
+        /* Color de Twitter al pasar el ratón */
+      }
+  
+      &.fa-facebook-square:hover {
+        color: #3b5998;
+  
+        /* Color de Facebook al pasar el ratón */
+      }
+  
+      &.fa-instagram-square:hover {
+        color: #e4405f;
+  
+        /* Color de Instagram al pasar el ratón */
+      }
+  
+      &.fa-linkedin:hover {
+        color: #0077b5;
+  
+        /* Color de LinkedIn al pasar el ratón */
+      }
+    }
+  }
+  
+  /* Estilos específicos para los íconos de redes sociales */

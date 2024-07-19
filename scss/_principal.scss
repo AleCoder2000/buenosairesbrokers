@@ -1,0 +1,140 @@
+/* Pagina principal */
+
+@mixin anclas {
+  font-weight: 400;
+  font-style: normal;
+}
+
+.contenedor {
+    margin: 15px;
+    height: 82vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: "caja1 caja2" "caja1 caja3" "caja4 caja6" "caja5 caja6";
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .caja {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+    &:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+  }
+  
+  .caja1 {
+    grid-area: caja1;
+    background-color: #a8f1f1;
+    font-size: 45px;
+    font-style: italic;
+    background-image: url("../images/foto\ grid1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #d4cff0;
+    color: #d3c3ff;
+    animation: slideInScale 0.5s ease-in-out;
+  }
+  
+  .caja2 {
+    grid-area: caja2;
+    font-size: 40px;
+    background-color: #c2c2f3;
+    font-family: "Skranji", system-ui;
+    @include anclas;
+    color: #5425d4;
+    animation: slideIn 0.7s ease-in-out;
+  }
+  
+  .caja3 {
+    grid-area: caja3;
+    font-size: 40px;
+    background-color: #9a9ae7;
+    font-family: "Skranji", system-ui;
+    @include anclas;
+    color: #5425d4;
+    animation: slideIn 0.9s ease-in-out;
+  }
+  
+  .caja4 {
+    grid-area: caja4;
+    font-size: 40px;
+    background-color: #c2c2f3;
+    font-family: "Skranji", system-ui;
+    @include anclas;
+    color: #5425d4;
+    animation: slideIn 1.1s ease-in-out;
+  }
+  
+  .caja5 {
+    grid-area: caja5;
+    font-size: 40px;
+    background-color: #9a9ae7;
+    font-family: "Skranji", system-ui;
+    @include anclas;
+    color: #5425d4;
+    animation: slideIn 1.3s ease-in-out;
+  }
+  
+  .caja6 {
+    grid-area: caja6;
+    font-size: 45px;
+    font-style: italic;
+    background-image: url("../images/foto\ grid1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #d3c3ff;
+    animation: slideInRotate 1.5s ease-in-out;
+  }
+  
+  /* Animaciones */
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+  
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInScale {
+    from {
+      transform: translateX(-100%) scale(0.5);
+      opacity: 0;
+    }
+  
+    to {
+      transform: translateX(0) scale(1);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInRotate {
+    from {
+      transform: translateX(-100%) rotate(-20deg);
+      opacity: 0;
+    }
+  
+    to {
+      transform: translateX(0) rotate(0deg);
+      opacity: 1;
+    }
+  }

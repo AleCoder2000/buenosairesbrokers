@@ -1,0 +1,42 @@
+/*header*/
+
+.custom-navbar {
+    background-color: #9e82eb;
+  
+    /* Color fondo navbar personalizado */
+  
+    .nav-link {
+      color: #f0e7ff !important;
+  
+      /* Color letras personalizado */
+    }
+  
+    .navbar-nav .nav-item {
+      margin-right: 10px;
+  
+      /* Espacio entre elementos LI */
+    }
+  
+    .nav-link {
+      &:hover {
+        color: #fff !important;
+  
+        /* Cambia a blanco al pasar el ratón */
+      }
+  
+      &.active {
+        color: #fff !important;
+  
+        /* Cambia el color del enlace activo */
+        background-color: #8c61db !important;
+  
+        /* Fondo del enlace activo */
+        border-radius: 5px;
+  
+        /* Bordes redondeados del enlace activo */
+        padding: 5px 10px;
+  
+        /* Espaciado interno del enlace activo */
+      }
+    }
+  }
